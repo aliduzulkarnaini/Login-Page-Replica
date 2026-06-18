@@ -1,0 +1,260 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #928bd1;
+}
+
+section{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(90deg, #b9b2f1, #776ccc);
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card{
+    width: min(400px, 94vw);
+    aspect-ratio: 2 / 3;
+    min-height: 560px;
+    overflow: hidden;
+    position: relative;
+    background: #817bc4;
+    border: 2px solid #8f88cf;
+    box-shadow: 0 0 22px #00000055;
+    border-radius: 0 30px 30px 0;
+}
+
+.card-background,
+.card-background span{
+    position: absolute;
+}
+
+.card-background{
+    inset: 0;
+    overflow: hidden;
+}
+
+.card-background-1{
+    inset: 0 auto 0 0;
+    background: #fff;
+    z-index: 4;
+    transform: rotate(45deg);
+    top: 0px;
+    right: -80px;
+    left: -250px;
+    width: 460px;
+    height: 500px;
+    border-radius:0 15% 0% 0 ;
+
+    /* clip-path: path("M 0 0 L 150 0 L 329 188 C 370 231 370 294 329 337 L 0 555 Z"); */
+} 
+
+.card-background-2{
+    content: "";
+    position: absolute;
+    left: 200px;
+    bottom: -100px;
+    width: 150px;
+    height: 500px;
+    top: 0px;
+    background: #5F57A3;
+    border-radius: 0 20px 20px 0;
+    transform: rotate(45deg);
+    z-index: 0;
+}
+
+
+.card-background-3{
+    content: "";
+    position: absolute;
+    left: 100px;
+    bottom: 0;
+    width: 300px;
+    height: 300px;
+    top: -250px;
+    background: #6D64AC;
+    border-radius: 0 0 46px 46px;
+    transform: rotate(-45deg);
+    z-index: 0;
+}
+
+.card-background-4{
+     content: "";
+    position: absolute;
+    left: 120px;
+    bottom: -230px;
+    width: 400px;
+    height: 350px;
+    background: #7168b8;
+    border-radius: 50px 0 0 0;
+    transform: rotate(45deg);
+    z-index: 0;
+}
+
+.login-form{
+    width: 218px;
+    position: absolute;
+    left: 34px;
+    top: 178px;
+    z-index: 5;
+}
+
+.field{
+    height: 42px;
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #cfcdd8;
+}
+
+.field:focus-within{
+    border-color: #6559ba;
+}
+
+.field-icon{
+    width: 22px;
+    height: 18px;
+    position: relative;
+    flex: 0 0 22px;
+    color: #827cc8;
+}
+
+.field-icon-user::before{
+    content: "";
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    border-radius: 50%;
+    background: #827cc8;
+}
+
+.field-icon-user::after{
+    content: "";
+    width: 13px;
+    height: 7px;
+    position: absolute;
+    left: 2px;
+    bottom: 1px;
+    border-radius: 8px 8px 2px 2px;
+    background: #827cc8;
+}
+
+.field-icon-lock::before{
+    content: "";
+    width: 10px;
+    height: 8px;
+    position: absolute;
+    left: 3px;
+    bottom: 2px;
+    border-radius: 2px;
+    background: #827cc8;
+}
+
+.field-icon-lock::after{
+    content: "";
+    width: 8px;
+    height: 7px;
+    position: absolute;
+    left: 4px;
+    top: 1px;
+    border: 2px solid #827cc8;
+    border-bottom: 0;
+    border-radius: 7px 7px 0 0;
+}
+
+.field input{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    color: #5e5a80;
+    font-size: 12px;
+    font-weight: 700;
+    background: transparent;
+}
+
+.field input::placeholder{
+    color: #777389;
+    opacity: 1;
+}
+
+.login-button{
+    width: 286px;
+    height: 64px;
+    margin-top: 20px;
+    border: 0;
+    border-radius: 34px;
+    padding: 0 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #4f47a7;
+    background: #fff;
+    box-shadow: 0 3px 9px #00000035;
+    font-size: 13px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.button-arrow{
+    color: #716ac0;
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.social-login{
+    position: absolute;
+    right: 38px;
+    bottom: 70px;
+    z-index: 5;
+    color: #fff;
+    text-align: left;
+}
+
+.social-login p{
+    margin-bottom: 14px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.social-icons{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.social-icon{
+    width: 18px;
+    height: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon svg{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+}
+
+.social-icon path{
+    fill: currentColor;
+    stroke: none;
+}
