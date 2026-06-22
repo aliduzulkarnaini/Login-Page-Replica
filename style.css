@@ -127,54 +127,9 @@ section{
 .field-icon{
     width: 22px;
     height: 18px;
-    position: relative;
+    display: block;
     flex: 0 0 22px;
-    color: #827cc8;
-}
-
-.field-icon-user::before{
-    content: "";
-    width: 7px;
-    height: 7px;
-    position: absolute;
-    top: 2px;
-    left: 5px;
-    border-radius: 50%;
-    background: #827cc8;
-}
-
-.field-icon-user::after{
-    content: "";
-    width: 13px;
-    height: 7px;
-    position: absolute;
-    left: 2px;
-    bottom: 1px;
-    border-radius: 8px 8px 2px 2px;
-    background: #827cc8;
-}
-
-.field-icon-lock::before{
-    content: "";
-    width: 10px;
-    height: 8px;
-    position: absolute;
-    left: 3px;
-    bottom: 2px;
-    border-radius: 2px;
-    background: #827cc8;
-}
-
-.field-icon-lock::after{
-    content: "";
-    width: 8px;
-    height: 7px;
-    position: absolute;
-    left: 4px;
-    top: 1px;
-    border: 2px solid #827cc8;
-    border-bottom: 0;
-    border-radius: 7px 7px 0 0;
+    object-fit: contain;
 }
 
 .field input{
