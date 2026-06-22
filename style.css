@@ -92,7 +92,7 @@ section{
 }
 
 .card-background-4{
-     content: "";
+    content: "";
     position: absolute;
     left: 120px;
     bottom: -230px;
@@ -244,17 +244,12 @@ section{
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    color: inherit;
+    text-decoration: none;
 }
 
-.social-icon svg{
+.social-icon img{
     width: 100%;
     height: 100%;
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 2;
-}
-
-.social-icon path{
-    fill: currentColor;
-    stroke: none;
+    display: block;
 }
